@@ -1,4 +1,4 @@
-#8. programa que pida un número de horRas y muestre por pantalla los minutos y segundos
+#8. programa que pida un número de horas y muestre por pantalla los minutos y segundos
 var1=int(input("Inserte número de horas"))
 
 minutos=var1*60
