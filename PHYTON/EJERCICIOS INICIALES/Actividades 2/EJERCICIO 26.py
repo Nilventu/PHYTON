@@ -4,7 +4,7 @@ letra= input("Inserta la letra: ")
 if letra.isupper():
     print("La letra es mayúscula")
 elif letra.islower():
-    print("La letra es mayúscula")
+    print("La letra es minúscula")
 else:
     print("ERROR")
     
