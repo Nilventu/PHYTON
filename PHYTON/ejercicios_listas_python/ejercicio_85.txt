@@ -1,1 +1,47 @@
-Ejercicio 85: Descripción del ejercicio.
+#85. Te piden realizar un programa en que gestionen la media y la mediana de varias de tresasignaturas de legua: catalán, inglés y castellano. Una vez introducidos varios registros elprograma debe mostrar la media y mediana los todos los alumnos introducidos
+ingles = []
+castellano = []
+catalan = []
+
+seguir = "s"
+while seguir == "s":
+    estudiante = input("Introduce nombre del estudiante: ")
+    nota_ingles = float(input("Nota en inglés: "))
+    nota_castellano = float(input("Nota en castellano: "))
+    nota_catalan = float(input("Nota en catalán: "))
+
+    ingles.append(nota_ingles)
+    castellano.append(nota_castellano)
+    catalan.append(nota_catalan)
+
+    seguir = input("¿Introducir otro alumno? (s/n): ").lower()
+
+media_ingles = sum(ingles) / len(ingles)
+media_castellano = sum(castellano) / len(castellano)
+media_catalan = sum(catalan) / len(catalan)
+
+ingles.sort()
+castellano.sort()
+catalan.sort()
+
+if len(ingles) % 2 == 1:
+    mediana_ingles = ingles[len(ingles) // 2]
+else:
+    mediana_ingles = (ingles[len(ingles) // 2 - 1] + ingles[len(ingles) // 2]) / 2
+
+if len(castellano) % 2 == 1:
+    mediana_castellano = castellano[len(castellano) // 2]
+else:
+    mediana_castellano = (castellano[len(castellano) // 2 - 1] + castellano[len(castellano) // 2]) / 2
+
+if len(catalan) % 2 == 1:
+    mediana_catalan = catalan[len(catalan) // 2]
+else:
+    mediana_catalan = (catalan[len(catalan) // 2 - 1] + catalan[len(catalan) // 2]) / 2
+
+print("Media en inglés:", media_ingles)
+print("Media en castellano:", media_castellano)
+print("Media en catalán:", media_catalan)
+print("Mediana en inglés:", mediana_ingles)
+print("Mediana en castellano:", mediana_castellano)
+print("Mediana en catalán:", mediana_catalan)
