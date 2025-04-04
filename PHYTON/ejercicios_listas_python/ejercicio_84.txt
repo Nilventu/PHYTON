@@ -1,1 +1,23 @@
-Ejercicio 84: Descripción del ejercicio.
+#84. A partir de la lista definida en el ejercicio 81, haz que se visualice por pantalla una de laspalabras, pero con todas sus letras desordenadas. El usuario tendrá que recolocar y acertar lapalabra secreta. El usuario tendrá 3 oportunidades para adivinar la palabra. 
+
+import random
+
+palabras = ["casa", "barco", "gato", "perro", "madera", "agua", "puente", "pantalón"]
+
+palabra_secreta = random.choice(palabras)
+
+desordenada = list(palabra_secreta)
+random.shuffle(desordenada)
+print("Palabra desordenada:", "".join(desordenada))
+
+intentos = 0
+max_intentos = 3
+intento = ""
+while intento != palabra_secreta and intentos < max_intentos:
+    intento = input("Intenta adivinar la palabra: ")
+    intentos += 1
+
+if intento == palabra_secreta:
+    print("¡Acertaste!")
+else:
+    print("No acertaste, la palabra era:", palabra_secreta)
