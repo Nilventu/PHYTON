@@ -1,1 +1,9 @@
-Ejercicio 80: Descripción del ejercicio.
+#80. Utilizando listas, crea un programa que te permita determinar si un número es decimal o no. 
+valores = ["12", "12.1", "Hola", "12.", "6.098", "6.09a", "4.34.2"]
+for v in valores:
+
+    if "." in v and v.replace(".", "").isdigit():
+        print(v, "Es un número con decimales")
+
+    else:
+        print(v, "No es un número con decimales")
