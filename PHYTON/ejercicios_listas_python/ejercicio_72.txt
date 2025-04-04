@@ -1,1 +1,12 @@
-Ejercicio 72: Descripción del ejercicio.
+#72. A partir del ejercicio anterior, se da por hecho que las vocales con o sin acento son repetidas yno deben almacenarse en la lista
+
+letras = []
+seguir = "s"
+
+while seguir == "s":
+    letra = input("Introduce una letra: ")
+
+    if letra.lower() not in vocales and letra not in letras:
+        letras.append(letra)
+    seguir = input("¿Deseas repetir? (s/n): ")
+print("Letras sin repetir que no son vocales:", letras)
