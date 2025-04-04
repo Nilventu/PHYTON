@@ -1,1 +1,10 @@
-Ejercicio 71: Descripción del ejercicio.
+#71. Haz un programa que permita al usuario introducir letras en una lista (cantidad indefinida), en esta lista no deben almacenarse las letras que se han introducido repetidas.
+
+letras = []
+seguir = "s"
+while seguir == "s":
+    letra = input("Introduce una letra: ")
+    if letra not in letras:
+        letras.append(letra)
+    seguir = input("¿Deseas repetir? (s/n): ")
+print("Letras sin repetir:", letras)
