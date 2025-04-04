@@ -1,1 +1,1 @@
-Ejercicio 81: Descripción del ejercicio.
+#81. A partir de una lista definida, busca el método apropiado para que se visualice un valor de lalista al azar
