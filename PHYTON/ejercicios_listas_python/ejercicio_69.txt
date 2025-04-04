@@ -1,4 +1,5 @@
-# Ejercicio 69: Ordenar números ingresados por el usuario
+#69. Realiza un programa que permita introducir una cantidad exacta de números, cada número seirá almacenando en una lista. El programa debe finalizar presentando por #pantalla los números
+o#rdenados de menor a mayor.
 numeros = []
 
 cantidad = int(input("Introduce la cantidad de números: "))
