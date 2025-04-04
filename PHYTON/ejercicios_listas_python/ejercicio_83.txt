@@ -1,1 +1,27 @@
-Ejercicio 83: Descripción del ejercicio.
+#83. Modifica el código del ejercicio anterior para que el programa permita repetir x partidas (hastaque el usuario lo decida). Tienes que controlar una puntuación de cada partida de la siguientemanera, si la palabra la aciertas a la primera son 8 puntos, si la aciertas a la segunda 7 puntos y asísucesivamente.Una vez el usuario desea finalizar el programa tiene que sumar todas tus puntuaciones obtenidas.Si el total supera la media de la puntuación posible de todas las partidas, se puede decir que lasuerte le acompaña, de lo contrario mejor no Se dediques a los juegos de azar . PISTA.. ¿existealgún método que permita sumar el contenido de una lista?
+
+import random
+
+palabras = ["casa", "barco", "gato", "perro", "madera", "agua", "puente", "pantalón"]
+puntuaciones = []
+
+seguir_jugando = "s"
+while seguir_jugando == "s":
+
+    palabra_secreta = random.choice(palabras)
+    intentos = 0
+    intento = ""
+    while intento != palabra_secreta:
+        intentos += 1
+        intento = input("Introduce la palabra secreta: ")
+
+    puntuaciones.append(max(1, 8 - intentos))  # Puntuación basada en los intentos
+
+    seguir_jugando = input("¿Jugar otra vez? (s/n): ").lower()
+
+total = sum(puntuaciones)
+media = total / len(puntuaciones)
+
+print("Puntuaciones:", puntuaciones)
+print("Puntuación total:", total)
+print("Media de las partidas:", media)
