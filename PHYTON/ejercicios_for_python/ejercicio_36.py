@@ -1,5 +1,6 @@
-# Programa que suma los n primeros números naturales
-n = int(input("Introduce un número: "))
+#36. Programa que sume los n primeros números naturales. n Lo introduce el usuario.
+
+numero = int(input("Introduce un número: "))
 suma = 0
 for i in range(1, n + 1):
     suma += i
