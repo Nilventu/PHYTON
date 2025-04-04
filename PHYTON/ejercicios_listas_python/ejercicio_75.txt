@@ -1,1 +1,29 @@
-Ejercicio 75: Descripción del ejercicio.
+#75. Crea una lista con el siguiente nombre lista1 y su contenido: a,b,D,x,r,X,3,h,w,2,i. Presenta por
+#pantalla los siguientes resultados:
+#a. Cantidad total de valores
+#b. Cantidad de números
+#c. Cantidad de letras
+#d. Cantidad de mayúsculas
+#e. Suma de los valores numéricos
+
+lista1 = ['a', 'b', 'D', 'x', 'r', 'X', '3', 'h', 'w', '2', 'i']
+numeros = []
+letras = []
+mayusculas = []
+suma_numeros = 0
+
+for x in lista1:
+    if x.isdigit():
+        numeros.append(x)
+        suma_numeros += int(x)
+
+    elif x.isalpha():
+        letras.append(x)
+        if x.isupper():
+            mayusculas.append(x)
+
+print("Número de valores:", len(lista1))
+print("Cantidad de números:", len(numeros))
+print("Cantidad de letras:", len(letras))
+print("Cantidad de mayúsculas:", len(mayusculas))
+print("Suma total de números:", suma_numeros)
