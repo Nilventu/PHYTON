@@ -1,1 +1,14 @@
-Ejercicio 82: Descripción del ejercicio.
+#82. Modifica el programa anterior para que sea el usuario intente adivinar la palabra escogida alazar de la lista, indicando si es correcto o no. El programa debe no finaliza hasta que no se adivinela palabra
+import random
+
+palabras = ["casa", "barco", "gato", "perro", "madera", "agua", "puente", "pantalón"]
+palabra_secreta = random.choice(palabras)
+
+intento = ""
+
+while intento != palabra_secreta:
+    intento = input("Introduce la palabra secreta: ")
+    if intento != palabra_secreta:
+        print("Sigue jugando, intenta otra vez.")
+
+print("Acertaste")
