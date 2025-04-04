@@ -1,1 +1,11 @@
-Ejercicio 69: Descripción del ejercicio.
+# Ejercicio 69: Ordenar números ingresados por el usuario
+numeros = []
+
+cantidad = int(input("Introduce la cantidad de números: "))
+
+for i in range(cantidad):
+    num = int(input(f"Introduce un número ({i+1}/{cantidad}): "))
+    numeros.append(num)
+
+numeros.sort()
+print(numeros)
