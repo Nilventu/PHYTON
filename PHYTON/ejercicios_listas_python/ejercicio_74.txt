@@ -1,1 +1,1 @@
-Ejercicio 74: Descripción del ejercicio.
+#74. A partir del programa anterior, haz que se visualicen tanto las palabras que se repiten o no deentre las 2 listas.
