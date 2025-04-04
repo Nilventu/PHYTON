@@ -1,1 +1,7 @@
 #81. A partir de una lista definida, busca el método apropiado para que se visualice un valor de lalista al azar
+import random
+
+palabras = ["casa", "barco", "gato", "perro", "madera", "agua", "puente", "pantalón"]
+
+palabra_secreta = random.choice(palabras)
+print("Palabra secreta:", palabra_secreta)
