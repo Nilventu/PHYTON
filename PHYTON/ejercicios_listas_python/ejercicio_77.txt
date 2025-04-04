@@ -1,1 +1,13 @@
-Ejercicio 77: Descripción del ejercicio.
+#77. A partir de la lista del enunciado anterior, haz que el programa visualice por un lado las letrasy por otro los números permitiendo escoger orden ascendente o descendente. Como observarásen la salida, el orden de las letras no es correcto, busca la manera de solucionarlo
+
+seguir = "s"
+
+while seguir == "s":
+    valor = input("Introduce el valor que deseas eliminar: ")
+    if valor in numeros:
+        numeros.remove(valor)
+
+    else:
+        print("El valor introducido no está en la lista")
+    seguir = input("¿Deseas introducir otro valor? (s/n): ")
+print("Lista final de números:", numeros)
