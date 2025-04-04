@@ -1,7 +1,10 @@
-# Programa que cuenta los números positivos, negativos y ceros
-cantidad = int(input("Introduce la cantidad de números que deseas introducir: "))
-positivos = negativos = ceros = 0
-for _ in range(cantidad):
+#39. Programa que pida n números y que, tras introducir el último número, debe aparecer por pantalla el número total de positivos, negativos y número de 0.
+
+cantidad = int(input("Introduce la cantidad de números: "))
+positivos = 0
+negativos = 0
+ceros = 0
+for a in range(cantidad):
     numero = int(input("Introduce un número: "))
     if numero > 0:
         positivos += 1
